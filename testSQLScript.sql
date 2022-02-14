@@ -1,2 +1,6 @@
-USE classicmodels;
+use classicmodels;
 SELECT * from customers;
+
+/*
+ * Testing this out
+ */
