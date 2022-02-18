@@ -13,7 +13,7 @@ select * from ORDERS o ;
 select u.USER_ID, u.FIRST_NAME, u.LAST_NAME, u.CITY  
 from ORDERS o 
 right join USERS u ON o.USER_ID = u.USER_ID
-where u.USER_ID = IFNULL(o.ORDER_ID, u.USER_ID) ;  -- Need to finish this
+where o.USER_ID is NULL;  -- Need to finish this
 
 -- Question 3
 select * from ORDER_ITEMS;
